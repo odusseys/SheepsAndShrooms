@@ -1,0 +1,21 @@
+.grid-table {
+    table-layout: fixed;
+}
+
+.tile {
+    width: 2em;
+    height: 2em;
+    border: 0.01em black solid;
+}
+
+.tile-empty {
+    background: grey;
+}
+
+.tile-grass {
+    background: green;
+}
+
+.tile-shroom {
+    brackground: red;
+}

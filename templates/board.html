@@ -1,3 +1,7 @@
-<div>
-	Hello world
+<div ng-controller="BoardController">
+	<table class="grid-table">
+		<tr ng-repeat="row in grid">
+			<td ng-repeat="s in row track by $index" class="tile tile-{{s.toLowerCase()}}"></td>
+		</tr>
+	</table>
 </div>
