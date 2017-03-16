@@ -1,10 +1,14 @@
+.board {
+    font-size: 200%;
+}
+
 .grid-table {
     table-layout: fixed;
 }
 
 .tile {
-    width: 2em;
-    height: 2em;
+    width: 1em;
+    height: 1em;
     border: 0.01em black solid;
 }
 
@@ -18,4 +22,13 @@
 
 .tile-shroom {
     brackground: red;
+}
+
+.sheep {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
+    background: white;
+    border: 0.01em black solid;
 }

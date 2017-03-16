@@ -1,4 +1,7 @@
-<div ng-controller="BoardController">
+<div ng-controller="BoardController" class="board">
+	<div style="position: relative">
+		<div ng-style="{'top': sheepY + 'em', 'left': sheepX + 'em'}" class="sheep"></div>
+	</div>
 	<table class="grid-table">
 		<tr ng-repeat="row in grid">
 			<td ng-repeat="s in row track by $index" class="tile tile-{{s.toLowerCase()}}"></td>
