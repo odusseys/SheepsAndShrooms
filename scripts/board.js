@@ -106,7 +106,6 @@ app.controller('BoardController', function($scope){
                 var dxi = dx - t;
                 var dyi = dy - u;
                 if(Math.sqrt(dxi * dxi + dyi * dyi) < 1){
-                    console.debug("pushing corner", t, u)
                     res.push([x + 2 * i - 1, y + 2 * u - 1,])
                 }
             }
@@ -136,7 +135,6 @@ app.controller('BoardController', function($scope){
             initSheep();
         }
         var collision = computeCollision();
-        console.debug($scope.sheepY, $scope.sheepX, collision);
         for(var i = 0; i < collision.length; i++){
             var col = collision[i];
             var x = col[0];

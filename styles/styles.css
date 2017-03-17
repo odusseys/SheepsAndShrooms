@@ -9,24 +9,25 @@
 
 .grid-table {
     table-layout: fixed;
+    box-shadow: 0px 0px 10px 3px black;
 }
 
 .tile {
     width: 1em;
     height: 1em;
-    border: 0.01em black solid;
+    -border: 0.01em black solid;
 }
 
 .tile-empty {
-    background: grey;
+    background: #f2f2f2;
 }
 
 .tile-grass {
-    background: green;
+    background: #95d697;
 }
 
 .tile-shroom {
-    brackground: red;
+    background: #f43d3d;
 }
 
 .sheep {
@@ -35,5 +36,6 @@
     height: 1em;
     border-radius: 1em;
     background: white;
-    border: 0.01em black solid;
+    box-shadow: 0px 0px 10px 0.1px #888888;
+    -border: 0.01em black solid;
 }
