@@ -62,6 +62,8 @@ app.controller('BoardController', function($scope){
          initSheep();
          speed = 0.1;
          generateGrass(5);
+         $scope.score = 0;
+         $scope.multiplier = 1;
          generateShroom();
     };
     initGame();
@@ -141,11 +143,12 @@ app.controller('BoardController', function($scope){
             var y = col[1];
             if($scope.grid[x][y] == TILE_STATES.GRASS){
                 $scope.grid[x][y] = TILE_STATES.EMPTY;
-                $scope.score++;
+                $scope.score += $scope.multiplier;
             } else if($scope.grid[x][y] == TILE_STATES.SHROOM){
                 $scope.grid[x][y] = TILE_STATES.EMPTY;
-                $scope.score+=5;
+                $scope.score += 5 * $scope.multiplier;
                 generateGrass(5);
+                $scope.multiplier++;
                 speed *= SPEED_INCREASE;
                 generateShroom();
             }

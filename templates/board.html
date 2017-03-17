@@ -1,10 +1,16 @@
 <div ng-controller="BoardController" class="board" style="margin: 50px 0px 0px 50px;">
-	<div style="position: relative">
-		<div ng-style="{'top': sheepY + 'em', 'left': sheepX + 'em'}" class="sheep" id="sheep"></div>
+	<div class="horizontal-flex">
+		<div style="position: relative">
+			<div ng-style="{'top': sheepY + 'em', 'left': sheepX + 'em'}" class="sheep" id="sheep"></div>
+		</div>
+		<table class="grid-table">
+			<tr ng-repeat="row in grid">
+				<td ng-repeat="s in row track by $index" class="tile tile-{{s.toLowerCase()}}"></td>
+			</tr>
+		</table>
+		<div>
+			<div>Score : {{score}}</div>
+			<div>Multiplier : {{multiplier}}x</div>
+		</div>
 	</div>
-	<table class="grid-table">
-		<tr ng-repeat="row in grid">
-			<td ng-repeat="s in row track by $index" class="tile tile-{{s.toLowerCase()}}"></td>
-		</tr>
-	</table>
 </div>

@@ -1,3 +1,8 @@
+.horizontal-flex {
+    display: flex;
+    flex-direction: row;
+}
+
 .board {
     font-size: 200%;
 }
