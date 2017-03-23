@@ -1,0 +1,22 @@
+{
+  "name": "sheeps-and-shrooms",
+  "version": "1.0.0",
+  "description": "Sheeps &amp; Shrooms game",
+  "main": "index.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/odusseys/SheepsAndShrooms.git"
+  },
+  "author": "Ulysse Mizrahi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/odusseys/SheepsAndShrooms/issues"
+  },
+  "homepage": "https://github.com/odusseys/SheepsAndShrooms#readme",
+  "dependencies": {
+    "node-static": "^0.7.9"
+  }
+}
